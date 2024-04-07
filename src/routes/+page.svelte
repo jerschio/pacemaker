@@ -1,7 +1,5 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import Breadcrumb from './Breadcrumb.svelte';
 </script>
 
 <svelte:head>
@@ -10,18 +8,39 @@
 </svelte:head>
 
 <section>
-	<h1>Velkommen</h1>
+	<Breadcrumb />
 
-	<p>Velg produsent eller algoritme</p>
-	<ul>
-		<li><a href="/producers">Produsent</a></li>
-		<li><a href="/algoritme">Algoritme</a></li>
-	</ul>
+	<h1>Velg produsent eller algoritme</h1>
 
-	<Counter />
+	<div class="container">
+		<div>
+			<a href="/producers">Produsent</a>
+		</div>
+		<div>
+			<a href="/algoritme">Algoritme</a>
+		</div>
+	</div>
 </section>
 
 <style>
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		height: 100vh;
+	}
+
+	.container div {
+		background-color: #f0f0f0;
+		border: 2px solid #333;
+		padding: 20px;
+		text-align: center;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
@@ -32,21 +51,5 @@
 
 	h1 {
 		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>

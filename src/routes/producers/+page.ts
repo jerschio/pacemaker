@@ -1,5 +1,6 @@
-export async function load({ fetch }) {
+import type { Producer } from '../../types.js';
 
+export async function load({ fetch }) {
 	const response = await fetch('/data/producers.json');
 	console.log('response', response);
 
@@ -8,7 +9,7 @@ export async function load({ fetch }) {
 		return;
 	}
 
-	const producers = await response.json();
+	const producers: Producer[] = await response.json();
 
 	return {
 		producers: producers

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import Breadcrumb from '../Breadcrumb.svelte';
 	export let data;
 
 	function navigateToProducer(id: number) {
@@ -8,7 +9,8 @@
 	}
 </script>
 
-<h1>Produsenter</h1>
+<Breadcrumb />
+<h1>Velg produsent</h1>
 
 <div class="container">
 	{#each data.producers as producer (producer.id)}

@@ -3,14 +3,8 @@ export async function load({ fetch, params }) {
 	const id = params.id;
 	const idAsNumber = parseInt(id, 10);
 
-
-	console.log(`heisann hoppsann fra producers/[${id}]/index.svelte`);
-
-
+	// Henter data
 	const response = await fetch('/data/producers.json');
-
-
-	console.log('response', response);
 
 	if (!response.ok) {
 		console.error('An error occurred while fetching the producers.json file');
@@ -29,6 +23,5 @@ export async function load({ fetch, params }) {
 	return {
 		producer: producer
 	}
-
 
 }

@@ -1,4 +1,29 @@
-# create-svelte
+# Pacemaker
+
+Et artig lite prosjekt
+
+## Til Morten
+
+```bash
+# Installer git på maskinen din om du ikke har det allerede
+# Lag en mappe feks c:\git_morten
+# Stå i den mappen og kjør:
+git clone https://github.com/jerschio/pacemaker.git
+# Om dette går bra så har du fått en mappe c:\git_morten\pacemaker
+# Installer node https://nodejs.org/en (grønn knapp download node.js LTS)
+# Etter det gå til mappen c:\git_morten\pacemaker og kjør 
+npm install
+
+# Åpne mappen fra vs code
+# Åpne en terminal i vs code og kjør 
+npm run dev
+
+# Når du kjører commandoen over så sier den noe slikt som at nå kjører websiden på den og den adressen
+# Gå ditt fra din favoritt nettleser
+
+```
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
