@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Medtronic",
+        "name": "medtronic",
+        "display_name": "Medtronic",
         "models": [
             {
                 "id": 1,
@@ -17,7 +18,8 @@
     },
     {
         "id": 2,
-        "name": "Abbot",
+        "name": "abbot",
+        "display_name": "Abbot",
         "models": [
             {
                 "id": 3,
@@ -31,6 +33,7 @@
     },
     {
         "id": 3,
-        "name": "Mercedes"
+        "name": "mercedes",
+        "display_name": "Mercedes"
     }
 ]
