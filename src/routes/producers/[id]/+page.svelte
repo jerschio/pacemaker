@@ -9,9 +9,9 @@
 <pre>Her kunne det stått noe fornuftig</pre>
 
 {#if !data.producer.models}
-	<p>Ingen modeller å vise</p>
+	<p>Ingen algoritmer å vise</p>
 {:else}
-	<h2>Kanskje velge modell?</h2>
+	<h2>Velg algoritme</h2>
 	<div class="container">
 		{#each data.producer.models as model (model.id)}
 			<a href="/producers/{data.producer.id}/{model.id}">
