@@ -17,7 +17,7 @@
 			<a href="/producers">Produsent</a>
 		</div>
 		<div>
-			<a href="/algoritme">Algoritme</a>
+			<a href="/algorithm">Algoritme</a>
 		</div>
 	</div>
 </section>

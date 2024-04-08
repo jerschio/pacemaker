@@ -1,5 +1,4 @@
 <script>
-	import Header from './Header.svelte';
 	import './styles.css';
 </script>
 
@@ -9,7 +8,7 @@
 	</main>
 
 	<footer>
-		<p>Les heller <a href="https://vg.no">vg.no</a></p>
+		<p>Les heller <a href="https://vg.no">vg.no</a> (eksempel på footer)</p>
 	</footer>
 </div>
 
