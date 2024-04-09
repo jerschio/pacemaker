@@ -9,6 +9,7 @@
 <div class="homelink">
 	<!-- <a href="/pacemaker">Home</a> -->
 	<a href={urlToUse}>Home</a>
+	<p>Base er {base}</p>
 </div>
 
 <style>
