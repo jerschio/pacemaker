@@ -6,8 +6,6 @@ Et artig lite prosjekt
 
 <https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages>
 
-xbase: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
-
 ## Til Morten
 
 ```bash

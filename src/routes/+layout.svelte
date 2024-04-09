@@ -1,6 +1,5 @@
 <script>
 	import './styles.css';
-	import Breadcrumb from './Breadcrumb.svelte';
 	import Homelink from './Homelink.svelte';
 </script>
 

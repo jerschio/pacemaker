@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
+
+	console.log('base:', base);
 </script>
 
 <div class="homelink">
