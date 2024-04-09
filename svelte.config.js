@@ -1,7 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-
+console.log('Fra svelte.config.json process.argv', process.env.BASE_PATH);
 
 export default
 	{
