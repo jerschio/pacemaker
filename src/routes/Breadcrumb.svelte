@@ -23,7 +23,7 @@
 		<!-- Show segments -->
 		{#each segments as segment, index (segment)}
 			<li>
-				<a href={`{base}/${segments.slice(0, index + 1).join('/')}`}>
+				<a href={`/${segments.slice(0, index + 1).join('/')}`}>
 					{segment}
 				</a>
 			</li>
