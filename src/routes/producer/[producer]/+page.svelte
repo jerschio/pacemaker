@@ -4,7 +4,6 @@
 </script>
 
 <h1>{data.producer.name}</h1>
-<pre>Her kunne det stått noe fornuftig</pre>
 
 {#if !data.producer.models}
 	<p>Ingen algoritmer å vise</p>
@@ -20,8 +19,6 @@
 		{/each}
 	</div>
 {/if}
-
-<pre>{JSON.stringify(data, null, 2)}</pre>
 
 <style>
 	.container {

@@ -1,5 +1,4 @@
 <script>
-	import Breadcrumb from './Breadcrumb.svelte';
 	import { base } from '$app/paths';
 	export let data;
 </script>
@@ -10,8 +9,6 @@
 </svelte:head>
 
 <section>
-	<!-- <Breadcrumb /> -->
-
 	<h1>Velg produsent</h1>
 
 	<div class="container">
