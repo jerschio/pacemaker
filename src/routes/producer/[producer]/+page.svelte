@@ -3,22 +3,24 @@
 	export let data;
 </script>
 
-<h1>{data.producer.name}</h1>
+<section>
+	<h1>{data.producer.name}</h1>
 
-{#if !data.producer.models}
-	<p>Ingen algoritmer å vise</p>
-{:else}
-	<h2>Velg algoritme</h2>
-	<div class="container">
-		{#each data.producer.models as model (model.id)}
-			<a href="{base}/producer/{data.producer.name}/{model.id}">
-				<div>
-					{model.name}
-				</div>
-			</a>
-		{/each}
-	</div>
-{/if}
+	{#if !data.producer.models}
+		<p>Ingen algoritmer å vise</p>
+	{:else}
+		<h1>Velg algoritme</h1>
+		<div class="container">
+			{#each data.producer.models as model (model.id)}
+				<a href="{base}/producer/{data.producer.name}/{model.id}">
+					<div>
+						{model.name}
+					</div>
+				</a>
+			{/each}
+		</div>
+	{/if}
+</section>
 
 <style>
 	.container {
@@ -37,5 +39,17 @@
 		border-radius: 10px;
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 		margin-bottom: 20px;
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		flex: 0.6;
+	}
+
+	h1 {
+		width: 100%;
 	}
 </style>
