@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumb from './Breadcrumb.svelte';
+	export let data;
 </script>
 
 <svelte:head>
@@ -10,15 +11,16 @@
 <section>
 	<Breadcrumb />
 
-	<h1>Velg produsent eller algoritme</h1>
+	<h1>Velg produsent</h1>
 
 	<div class="container">
-		<div>
-			<a href="/producers">Produsent</a>
-		</div>
-		<div>
-			<a href="/algorithm">Algoritme</a>
-		</div>
+		{#each data.producers as producer (producer.id)}
+			<a href="/producer/{producer.name}">
+				<div>
+					{producer.name}
+				</div>
+			</a>
+		{/each}
 	</div>
 </section>
 
