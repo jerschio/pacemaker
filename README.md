@@ -2,6 +2,8 @@
 
 Et artig lite prosjekt
 
+<https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages>
+
 ## Til Morten
 
 ```bash
