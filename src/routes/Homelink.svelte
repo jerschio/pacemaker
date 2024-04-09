@@ -5,7 +5,7 @@
 </script>
 
 <div class="homelink">
-	<a href="{base}/">Home</a>
+	<a href="/">Home</a>
 </div>
 
 <style>
