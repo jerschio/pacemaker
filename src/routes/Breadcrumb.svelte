@@ -1,4 +1,5 @@
 <script lang="ts">
+	// Pr nå benyttes ikke denne komponenten, dersom den skal benyttes må den få litt mer kjærlighet, ikke minst om man publiserer til github pages
 	import { onMount } from 'svelte';
 	import { base } from '$app/paths';
 
