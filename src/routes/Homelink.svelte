@@ -7,8 +7,8 @@
 </script>
 
 <div class="homelink">
-	<!-- <a href="/pacemaker">Home</a> -->
-	<a href={urlToUse}>Home</a>
+	<a href={urlToUse}>Home urltouse</a>
+	<a href={base}>Home urltouse</a>
 	<p>Base er {base}</p>
 </div>
 
