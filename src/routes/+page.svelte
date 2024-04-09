@@ -10,7 +10,7 @@
 </svelte:head>
 
 <section>
-	<Breadcrumb />
+	<!-- <Breadcrumb /> -->
 
 	<h1>Velg produsent</h1>
 

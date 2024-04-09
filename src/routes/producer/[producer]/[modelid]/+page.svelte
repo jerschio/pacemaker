@@ -1,9 +1,6 @@
 <script lang="ts">
-	import Breadcrumb from '../../../Breadcrumb.svelte';
 	export let data;
 </script>
-
-<Breadcrumb />
 
 <h1>{data.model.name}</h1>
 

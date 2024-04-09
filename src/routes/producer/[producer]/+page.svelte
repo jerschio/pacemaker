@@ -1,10 +1,7 @@
 <script>
-	import Breadcrumb from '../../Breadcrumb.svelte';
 	import { base } from '$app/paths';
 	export let data;
 </script>
-
-<Breadcrumb />
 
 <h1>{data.producer.name}</h1>
 <pre>Her kunne det stått noe fornuftig</pre>

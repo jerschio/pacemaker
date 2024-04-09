@@ -1,15 +1,18 @@
 <script>
 	import './styles.css';
+	import Breadcrumb from './Breadcrumb.svelte';
+	import Homelink from './Homelink.svelte';
 </script>
 
 <div class="app">
 	<main>
+		<Homelink />
 		<slot />
 	</main>
 
-	<footer>
+	<!-- <footer>
 		<p>Les heller <a href="https://vg.no">vg.no</a> (eksempel på footer)</p>
-	</footer>
+	</footer> -->
 </div>
 
 <style>
