@@ -5,7 +5,7 @@
 </script>
 
 <div class="homelink">
-	<a href={base}>Home</a>
+	<a href="/pacemaker">Home</a>
 </div>
 
 <style>
