@@ -1,15 +1,9 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-
-	const urlToUse = base ? '/pacemaker' : '/';
-
-	console.log('base:', base);
 </script>
 
 <div class="homelink">
-	<a href={urlToUse}>Home urltouse</a>
-	<a href={base}>Home urltouse</a>
-	<p>Base er {base}</p>
+	<a href={base || '/'}>Home</a>
 </div>
 
 <style>
