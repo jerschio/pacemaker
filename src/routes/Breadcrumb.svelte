@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import { base } from '$app/paths';
 
 	let segments: string[] = [];
 
@@ -16,13 +17,13 @@
 	<ul class="breadcrumb">
 		<!-- Always show home -->
 		<li>
-			<a href="/">Home</a>
+			<a href="{base}/">Home</a>
 		</li>
 
 		<!-- Show segments -->
 		{#each segments as segment, index (segment)}
 			<li>
-				<a href={`/${segments.slice(0, index + 1).join('/')}`}>
+				<a href={`{base}/${segments.slice(0, index + 1).join('/')}`}>
 					{segment}
 				</a>
 			</li>

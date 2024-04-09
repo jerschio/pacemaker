@@ -2,7 +2,11 @@
 
 Et artig lite prosjekt
 
+## Nyttig lenke om man vil lage en github action for dette
+
 <https://www.okupter.com/blog/deploy-sveltekit-website-to-github-pages>
+
+xbase: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
 
 ## Til Morten
 

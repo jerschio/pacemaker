@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumb from '../../Breadcrumb.svelte';
+	import { base } from '$app/paths';
 	export let data;
 </script>
 
@@ -14,7 +15,7 @@
 	<h2>Velg algoritme</h2>
 	<div class="container">
 		{#each data.producer.models as model (model.id)}
-			<a href="/producer/{data.producer.name}/{model.id}">
+			<a href="{base}/producer/{data.producer.name}/{model.id}">
 				<div>
 					{model.name}
 				</div>

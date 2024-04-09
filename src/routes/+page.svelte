@@ -1,5 +1,6 @@
 <script>
 	import Breadcrumb from './Breadcrumb.svelte';
+	import { base } from '$app/paths';
 	export let data;
 </script>
 
@@ -15,7 +16,7 @@
 
 	<div class="container">
 		{#each data.producers as producer (producer.id)}
-			<a href="/producer/{producer.name}">
+			<a href="{base}/producer/{producer.name}">
 				<div>
 					{producer.name}
 				</div>
