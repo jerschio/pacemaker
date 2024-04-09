@@ -2,6 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 console.log('Fra svelte.config.json process.argv', process.env.BASE_PATH);
+console.log('Fra svelte.config.json Hva får vi som base egentlig', process.argv.includes('dev') ? '' : process.env.BASE_PATH);
 
 export default
 	{
